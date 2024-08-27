@@ -1,0 +1,52 @@
+<div class="container h-75">
+    <div class="h-100 d-flex justify-content-center align-items-center">
+        <div class="row text-center">
+            <div class="col-12">
+                <h3>Modal Component</h3>
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#modalFormulario">
+                    Abrir formulário
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal com o formulário -->
+<div id="modalFormulario" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title">Formulário de inscrição</h2>
+            </div>
+            <div class="modal-body">
+                <div class="row row-gap-3">
+                    <div class="col-12 col-lg-6">
+                        <label class="form-label" for="nomeCandidato">Nome completo</label>
+                        <input type="text" id="nomeCandidato" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <label class="form-label" for="idadeCandidato">Ano de nascimento</label>
+                        <input type="text" id="idadeCandidato" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <label class="form-label" for="cargo">Vaga pretendida</label>
+                        <select class="form-select" id="cargo">
+                            <option value="selecione">Selecione...</option>
+                            <option value="dev_jr">Desenvolvedor Jr</option>
+                            <option value="dev_pl">Desenvolvedor Pleno</option>   
+                            <option value="dev_sr">Desenvolvedor Sênior</option>                         
+                        </select>
+                    </div>                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
